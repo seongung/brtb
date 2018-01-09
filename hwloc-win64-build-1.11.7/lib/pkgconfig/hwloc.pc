@@ -1,0 +1,12 @@
+prefix=/c/Builds/manual/build-1.11.7/hwloc-1.11.7/build64/../hwloc-win64-build-1.11.7
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hwloc
+Description: Hardware locality detection and management library
+Version: 1.11.7
+Requires.private: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhwloc
+Libs.private: -lm -lgdi32   
